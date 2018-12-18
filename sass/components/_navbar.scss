@@ -1,0 +1,49 @@
+/* Creates the navbar band fixed at the top of
+the website */
+.navbar {
+    position: fixed;
+    background-color: rgb(56, 59, 65);
+    width: 100%;
+    height:50px;
+    top: 0;
+    overflow: hidden;
+}
+
+/* Takes away the bullet points and positions 
+where the list is inside the navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding positions where the ul is placed
+    within the navbar. no padding starts the links
+    on the left and right sides */
+    padding: 0 10%; 
+}
+
+/*.navbar li {
+    display: inline;
+} 
+This is commented out because I don't know
+how or if it affects the navbar.*/
+
+/* This creates space between each navbar link */
+.navbar li a { 
+    color: rgb(250, 250, 250);
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    height: 50px;
+    font-size: 18px;
+}
+
+/*When hovers, the button looks like it is pressed
+using top, this shifts it down 1px relative to it's
+current position */
+.navbar li a:hover {
+    background-color: rgba(136, 181, 247, 0.493);
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+}

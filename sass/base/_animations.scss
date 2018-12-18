@@ -1,0 +1,50 @@
+#firstname:hover {
+    position: relative;
+    animation-name: firstname;
+    animation-duration: 1s;
+}
+
+#lastname:hover {
+    position: relative;
+    animation-name: lastname;
+    animation-duration: 1s;
+    display: inline-block;
+}
+
+
+@keyframes firstname {
+    0%    {color: blue; top: 0;}
+    10%   {color: blue; top: 10px;}
+    20%   {color: blue; top: 5px;}
+    30%   {color: blue; top:12px;}
+    40%  {color: blue; top:0;}  
+    50%  {color: blue; top:-50;}    
+    60%  {color: blue; top:-5;}    
+    70%  {color: blue; top:0;}    
+    80%  {color: blue; top:0;}    
+    90%  {color: blue; top:-3;}    
+    100%  {color: blue; top:0;}        
+}
+
+@keyframes lastname {
+    0% {
+            color: greenyellow; 
+            transform:translate(0, 10px);
+        }
+    25% {
+            color: greenyellow;
+            transform:translate(0, 5px);
+         }    
+    50% {
+            color: greenyellow;
+            transform:translate(0, -10px); 
+        }
+    75% {
+            color: greenyellow;
+            transform:translate(0, 15px); 
+        }
+    100% {
+             color: greenyellow;
+             transform:translate(0, 0px); 
+               }
+}
