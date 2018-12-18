@@ -1,0 +1,22 @@
+{
+  "name": "byjasonmwebsite",
+  "version": "1.0.0",
+  "description": "byjasonm Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmido8/byjasonmWebsite.git"
+  },
+  "author": "Jason Middleton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmido8/byjasonmWebsite/issues"
+  },
+  "homepage": "https://github.com/jmido8/byjasonmWebsite#readme",
+  "devDependencies": {
+    "sass": "^1.15.2"
+  }
+}
