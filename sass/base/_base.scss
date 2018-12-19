@@ -9,12 +9,13 @@
 html {
     /* we are setting root font size. Using px to set it is bad practice. Use a %. so if you want 10px as default do 10/16 = 62.5  */
     font-size: 62.5%;
-    margin: 0;
-    padding: 0;
+    
 }
 
 body {
     /* Borders and paddings aren't added to the width and height of a box. */
     box-sizing: border-box; 
-    background-color: rgba(136, 181, 247, 0.493);
+    background-color: $color-4;
+    margin: 0;
+    padding: 0;
 }
