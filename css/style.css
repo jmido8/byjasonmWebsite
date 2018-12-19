@@ -1,0 +1,119 @@
+#firstname:hover {
+  position: relative;
+  animation-name: firstname;
+  animation-duration: 1s; }
+
+#lastname:hover {
+  position: relative;
+  animation-name: lastname;
+  animation-duration: 1s;
+  display: inline-block; }
+
+@keyframes firstname {
+  0% {
+    color: blue;
+    top: 0; }
+  10% {
+    color: blue;
+    top: 10px; }
+  20% {
+    color: blue;
+    top: 5px; }
+  30% {
+    color: blue;
+    top: 12px; }
+  40% {
+    color: blue;
+    top: 0; }
+  50% {
+    color: blue;
+    top: -50; }
+  60% {
+    color: blue;
+    top: -5; }
+  70% {
+    color: blue;
+    top: 0; }
+  80% {
+    color: blue;
+    top: 0; }
+  90% {
+    color: blue;
+    top: -3; }
+  100% {
+    color: blue;
+    top: 0; } }
+
+@keyframes lastname {
+  0% {
+    color: greenyellow;
+    transform: translate(0, 10px); }
+  25% {
+    color: greenyellow;
+    transform: translate(0, 5px); }
+  50% {
+    color: greenyellow;
+    transform: translate(0, -10px); }
+  75% {
+    color: greenyellow;
+    transform: translate(0, 15px); }
+  100% {
+    color: greenyellow;
+    transform: translate(0, 0px); } }
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* we are setting root font size. Using px to set it is bad practice. Use a %. so if you want 10px as default do 10/16 = 62.5  */
+  font-size: 62.5%; }
+
+body {
+  /* Borders and paddings aren't added to the width and height of a box. */
+  box-sizing: border-box;
+  background-color: #8C92B9;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: Jura, sans-serif;
+  font-weight: 400;
+  color: #F3F5F4; }
+
+/* Creates the navbar band fixed at the top of
+the website */
+.navbar {
+  position: fixed;
+  background-color: #3F6BBC;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  overflow: hidden; }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding positions where the ul is placed
+        within the navbar. no padding starts the links
+        on the left and right sides */
+    padding: 0 10%; }
+  .navbar li a {
+    color: #F3F5F4;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    height: 50px;
+    font-size: 18px; }
+    .navbar li a:hover {
+      /*When hovers, the button looks like it is pressed
+                using top, this shifts it down 1px relative to it's
+                current position */
+      background-color: #8C92B9;
+      position: relative;
+      top: 1px;
+      font-size: 20px; }
