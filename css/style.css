@@ -81,9 +81,6 @@ body {
   padding: 0;
   height: 100%; }
 
-main {
-  height: 100%; }
-
 section {
   width: 100vw;
   height: 95vh;
@@ -106,7 +103,8 @@ the website */
   width: 100%;
   height: 5vh;
   top: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 100; }
   .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -121,7 +119,7 @@ the website */
     text-align: center;
     padding: 14px 23px;
     text-decoration: none;
-    height: 50px;
+    height: 5vh;
     font-size: 18px; }
     .navbar li a:hover {
       /*When hovers, the button looks like it is pressed
@@ -131,11 +129,6 @@ the website */
       position: relative;
       top: 1px;
       font-size: 20px; }
-
-.grid {
-  grid-template-areas: "nav nav nav nav nav nav" "body body body body body body";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr;
-  grid-template-rows: 1fr 9fr; }
 
 #section-home {
   background-color: #8C92B9; }
