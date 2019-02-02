@@ -1,0 +1,9 @@
+
+.grid {
+    grid-template-areas: "nav nav nav nav nav nav"
+                         "body body body body body body";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr;
+    grid-template-rows: 1fr 9fr;                
+}
+
