@@ -72,12 +72,26 @@ html {
   /* we are setting root font size. Using px to set it is bad practice. Use a %. so if you want 10px as default do 10/16 = 62.5  */
   font-size: 62.5%; }
 
+html,
 body {
   /* Borders and paddings aren't added to the width and height of a box. */
   box-sizing: border-box;
   background-color: #8C92B9;
-  margin: 0;
-  padding: 0; }
+  margin: 10vh 0 0 0;
+  padding: 0;
+  height: 100%; }
+
+main {
+  height: 100%; }
+
+section {
+  width: 100vw;
+  height: 95vh;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50%;
+  margin-right: -50%; }
 
 body {
   font-family: Jura, sans-serif;
@@ -90,7 +104,7 @@ the website */
   position: fixed;
   background-color: #3F6BBC;
   width: 100%;
-  height: 50px;
+  height: 5vh;
   top: 0;
   overflow: hidden; }
   .navbar ul {
@@ -117,3 +131,20 @@ the website */
       position: relative;
       top: 1px;
       font-size: 20px; }
+
+.grid {
+  grid-template-areas: "nav nav nav nav nav nav" "body body body body body body";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr;
+  grid-template-rows: 1fr 9fr; }
+
+#section-home {
+  background-color: #8C92B9; }
+
+#section-about-me {
+  background-color: #EC4042; }
+
+#section-portfolio {
+  background-color: #E0BA9E; }
+
+#section-blog {
+  background-color: #EC4042; }
