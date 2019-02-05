@@ -91,7 +91,7 @@ section {
   margin: 0 auto;
   position: relative;
   top: 10%;
-  background-color: rgba(255, 255, 255, 0.486); }
+  background-color: rgba(56, 59, 65, 0.904); }
 
 body {
   font-family: Jura, sans-serif;
@@ -99,6 +99,7 @@ body {
   color: #F3F5F4; }
 
 .navbar {
+  font-size: 3.6rem;
   font-weight: 700; }
 
 .navbar {
@@ -107,7 +108,6 @@ body {
   align-items: center;
   padding-bottom: 0;
   height: 8vh;
-  font-size: 2rem;
   padding-bottom: 10px;
   background-color: #F3F5F4; }
 
@@ -148,6 +148,14 @@ body {
     font-size: 2.5rem;
     z-index: 99; } }
 
+#grid-home {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "title title title  title" ". picture icon1 ." ". picture icon2 ." ". bio bio .";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr .5fr .5fr .3fr; }
+
 #section-home {
   background-image: url("../images/codingpic.jpg");
   background-repeat: no-repeat;
@@ -155,8 +163,42 @@ body {
   position: relative; }
 
 .colorLayer {
-  background-color: rgba(140, 146, 185, 0.247);
   height: 100%; }
+
+#myPic {
+  grid-area: picture;
+  width: 60%;
+  min-width: 150px;
+  justify-self: end;
+  align-self: center; }
+
+#title {
+  grid-area: title;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  color: #F3F5F4;
+  font-size: 8rem; }
+
+#bio {
+  grid-area: bio;
+  color: #F3F5F4;
+  font-size: 3rem;
+  justify-self: start; }
+
+.icon1 {
+  grid-area: icon1;
+  font-size: 13rem;
+  align-self: end;
+  justify-self: start;
+  padding-left: 5%; }
+
+.icon2 {
+  align-self: start;
+  grid-area: icon2;
+  font-size: 13rem;
+  justify-self: start;
+  padding-left: 5%; }
 
 #section-about-me {
   background-color: #EC4042; }

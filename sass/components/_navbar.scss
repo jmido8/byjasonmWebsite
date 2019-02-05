@@ -7,7 +7,6 @@
         align-items: center;
         padding-bottom: 0;
         height: 8vh;
-        font-size: 2rem;
         padding-bottom: 10px;
         background-color: $color-1;
     }
@@ -18,13 +17,13 @@
         flex-grow: 1;
         justify-content: space-around;
         list-style-type: none;
-
     }
     
-    //targets li's in main-nav
+    //targets <a> tags inside <li>'s
     .nav-items {
         display: flex;
         justify-content: center;
+        // align-self: stretch;
         text-decoration: none;
 
         &:hover {
