@@ -1,7 +1,17 @@
 
-
+//home section - background picture
 #section-home {
-    background-color: $color-4;
+    background-image: url("../images/codingpic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+
+}
+
+//places a very slightly opate color film over the background image
+.colorLayer {
+    background-color: $color-4Opate;
+    height: 100%;
 }
 
 #section-about-me {

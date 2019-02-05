@@ -6,36 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Jura:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
     <title>Hi, I'm Jason</title>
 </head>
 <body>
-    <header class="container">
-    <!-- nav bar-->
+    <header>
+
+    <!-- Nav Bar-->
         <nav class="navbar">
-            <ul>
-                <li><a class="active" href="#section-home">Home</a></li>
-                <li><a href="#section-about-me">About Me</a></li>
-                <li><a href="#section-portfolio">Portfolio</a></li>
-                <li class="rightside"><a href="#section-contact">Contact</a></li>
-                <li class="rightside"><a href="#section-blog">Blog</a></li>
-                
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-hamburger">
+                <li><a class="nav-items" href="#section-home">Home</a></li>
+                <li><a class="nav-items" href="#section-about-me">About Me</a></li>
+                <li><a class="nav-items" href="#section-portfolio">Portfolio</a></li>
+                <li><a class="nav-items" href="#section-contact">Contact</a></li>
+                <li><a class="nav-items" href="#section-blog">Blog</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Main -->
     <main>
+
+        <!-- Home Section -->
         <section class="grid" id="section-home">
-            <h2>This website is under development!</h2>
-            <h1>Hi, I'm <span id="firstname">Jason</span> <span id="lastname">Middleton</span> and blah blah blah blah!</h1>
+            <div class="colorLayer">
+                <div class="container">
+                    <h2>This website is under development!</h2>
+                    <h1>Hi, I'm <span id="firstname">Jason</span> <span id="lastname">Middleton</span> and blah blah blah blah!</h1>
+                </div>
+            </div>
         </section>
+
+        <!-- About Me Section -->
         <section id="section-about-me">
-            <h1>About me</h1>
+            <div class="container">
+                <h1>About me</h1>
+            </div>
         </section>    
+
+        <!-- Portfolio Section -->
         <section id="section-portfolio">
             <h1>Portfolio</h1>
         </section>
+
+        <!-- Contact Section -->
         <section id="section-contact">
             <h1>Contact Me</h1>
         </section>
+
+        <!-- Blog Section -->
         <section id="section-blog">
             <h1>Blog</h1>
         </section>

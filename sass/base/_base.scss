@@ -1,9 +1,8 @@
-*,
-::after,
-::before {
+//global reset
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
@@ -12,27 +11,31 @@ html {
     
 }
 
-html,
+//makes entire body into a vertical flexbox
 body {
-    /* Borders and paddings aren't added to the width and height of a box. */
-    box-sizing: border-box; 
     background-color: $color-4;
-    margin: 10vh 0 0 0;
-    padding: 0;
-    height: 100%
-    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
 }
 
 main {
+    flex:1;
+    overflow: scroll;
+    }
+
+section {
+    width: 100%;
     height: 100%;
 }
 
-section {
-    width: 100vw;
-    height: 95vh;
+//container for visible content in section
+.container {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50%;
-    margin-right: -50%;
+    top: 10%;
+    background-color: rgba(255, 255, 255, 0.486);
 }

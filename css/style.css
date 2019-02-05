@@ -61,77 +61,102 @@
     color: greenyellow;
     transform: translate(0, 0px); } }
 
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   /* we are setting root font size. Using px to set it is bad practice. Use a %. so if you want 10px as default do 10/16 = 62.5  */
   font-size: 62.5%; }
 
-html,
 body {
-  /* Borders and paddings aren't added to the width and height of a box. */
-  box-sizing: border-box;
   background-color: #8C92B9;
-  margin: 10vh 0 0 0;
-  padding: 0;
-  height: 100%; }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden; }
+
+main {
+  flex: 1;
+  overflow: scroll; }
 
 section {
-  width: 100vw;
-  height: 95vh;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50%;
-  margin-right: -50%; }
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.486); }
 
 body {
   font-family: Jura, sans-serif;
   font-weight: 400;
   color: #F3F5F4; }
 
-/* Creates the navbar band fixed at the top of
-the website */
 .navbar {
-  position: fixed;
-  background-color: #3F6BBC;
-  width: 100%;
-  height: 5vh;
-  top: 0;
-  overflow: hidden;
-  z-index: 100; }
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    /* padding positions where the ul is placed
-        within the navbar. no padding starts the links
-        on the left and right sides */
-    padding: 0 10%; }
-  .navbar li a {
-    color: #F3F5F4;
-    float: left;
+  font-weight: 700; }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  height: 8vh;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  background-color: #F3F5F4; }
+
+.main-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  list-style-type: none; }
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  text-decoration: none; }
+  .nav-items:hover {
+    color: #EC4042;
+    background-color: rgba(140, 146, 185, 0.247); }
+
+.navbar-toggle {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 100%; }
+  .main-nav {
+    display: none;
+    margin: auto; }
+    .main-nav li {
+      margin: 15px auto; }
+  .active {
+    display: block; }
+  .navbar-toggle {
     display: block;
-    text-align: center;
-    padding: 14px 23px;
-    text-decoration: none;
-    height: 5vh;
-    font-size: 18px; }
-    .navbar li a:hover {
-      /*When hovers, the button looks like it is pressed
-                using top, this shifts it down 1px relative to it's
-                current position */
-      background-color: #8C92B9;
-      position: relative;
-      top: 1px;
-      font-size: 20px; }
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #3F6BBC;
+    font-size: 2.5rem;
+    z-index: 99; } }
 
 #section-home {
-  background-color: #8C92B9; }
+  background-image: url("../images/codingpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.colorLayer {
+  background-color: rgba(140, 146, 185, 0.247);
+  height: 100%; }
 
 #section-about-me {
   background-color: #EC4042; }
