@@ -91,7 +91,16 @@ section {
   margin: 0 auto;
   position: relative;
   top: 10%;
-  background-color: rgba(56, 59, 65, 0.904); }
+  background-color: rgba(56, 59, 65, 0.904);
+  overflow: auto; }
+
+#list-head {
+  list-style-type: none; }
+
+#checklist {
+  font-size: 2rem;
+  margin-right: 20%;
+  margin-left: 30%; }
 
 body {
   font-family: Jura, sans-serif;

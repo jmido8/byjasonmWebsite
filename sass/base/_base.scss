@@ -38,4 +38,15 @@ section {
     position: relative;
     top: 10%;
     background-color: $dark-color;
+    overflow: auto;
+}
+
+#list-head {
+    list-style-type: none;
+}
+
+#checklist {
+    font-size: 2rem;
+    margin-right: 20%;
+    margin-left: 30%;
 }
