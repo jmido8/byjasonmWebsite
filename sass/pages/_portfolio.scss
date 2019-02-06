@@ -1,0 +1,22 @@
+#section-portfolio {
+    background-color: $color-2;
+}
+
+.portfolio-box  {
+    grid-area: current;
+    justify-self: center;
+}
+
+.active-pic {
+    width: 100%;
+    min-width: 350px;
+    max-width: 650px;
+    overflow: hidden;
+}
+
+.active-app-name {
+    grid-area: title;
+    font-size: 4rem;
+    justify-self: center;
+    align-self: center;
+}
