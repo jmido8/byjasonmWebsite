@@ -1,16 +1,19 @@
+
+//home-section grid. 
 #grid-home {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-areas: "title title title  title"
-                         ". picture icon1 ."
-                         ". picture icon2 ."
-                         ". bio bio .";
+    grid-template-areas: "title title title  title title"
+                         ". picture icon1 bio ."
+                         ". picture icon2 bio ."
+                         ". . . . .";
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: .5fr 1fr .5fr 1fr .5fr;
     grid-template-rows: .2fr .5fr .5fr .3fr;    
 }
 
+//portfolio-section grid. 1 large display box and 2 small display boxes to the side. 1 title bar on top. 
 .portfolio-grid {
     display: grid;
     grid-template-areas: "title title title" 

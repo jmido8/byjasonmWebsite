@@ -14,6 +14,7 @@
     height: 100%;
 }
 
+//styles portrait
 #myPic {
     grid-area: picture;
     width: 60%;
@@ -23,6 +24,7 @@
     // border-radius: 50%;
 }
 
+//styles title bar
 #title {
     grid-area: title;
     height: 100%;
@@ -32,29 +34,33 @@
     font-size: 8rem;
 }
 
+//text section
 #bio {
     grid-area: bio;
     // background-color: $color-container-white;
     color: $color-1;
     font-size: 3rem;
-    justify-self: start;
+    justify-self: center;
+    align-self: center;
     // padding: 15%;
 }
 
+//linkedin
 .icon1 {
     
     grid-area: icon1;
     font-size: 13rem;
     align-self: end;
-    justify-self: start;
+    justify-self: center;
     padding-left: 5%;
 }
 
+//github
 .icon2 {
     align-self: start;
     grid-area: icon2;
     font-size: 13rem;
-    justify-self: start;
+    justify-self: center;
     padding-left: 5%;
 }
 #section-about-me {
