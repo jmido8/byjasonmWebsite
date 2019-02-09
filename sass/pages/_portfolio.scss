@@ -2,21 +2,60 @@
     background-color: $color-2;
 }
 
-.portfolio-box  {
-    grid-area: current;
-    justify-self: center;
+.portfolio-box-left  {
+    grid-area: leftApp;
+    justify-self: end;
+    align-self: center;
 }
 
-.active-pic {
+.portfolio-box-center  {
+    grid-area: currentApp;
+    justify-self: center;
+    border: 1px solid $color-3;
+
+    &:hover {
+        border: 4px solid green;
+    }
+}
+
+.portfolio-box-right  {
+    grid-area: rightApp;
+    justify-self: start;
+    align-self: center;
+}
+
+
+#active-pic {
     width: 100%;
     min-width: 350px;
     max-width: 650px;
     overflow: hidden;
 }
 
+.preview-pic {
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px;
+    overflow: hidden;
+}
+
 .active-app-name {
-    grid-area: title;
+    grid-area: mainTitle;
     font-size: 4rem;
     justify-self: center;
     align-self: center;
+}
+
+.left-active-app-name {
+    grid-area: leftTitle;
+    font-size: 2rem;
+    justify-self: end;
+    align-self: end;
+}
+
+.right-active-app-name {
+    grid-area: rightTitle;
+    font-size: 2rem;
+    justify-self: start;
+    align-self: end;
 }

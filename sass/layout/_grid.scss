@@ -16,8 +16,8 @@
 //portfolio-section grid. 1 large display box and 2 small display boxes to the side. 1 title bar on top. 
 .portfolio-grid {
     display: grid;
-    grid-template-areas: "title title title" 
-                         "before current after";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "leftTitle mainTitle rightTitle" 
+                         "leftApp currentApp rightApp";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 3fr;
 }
