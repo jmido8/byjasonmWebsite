@@ -71,7 +71,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #8C92B9;
+  background-color: #66FCF1;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -91,7 +91,7 @@ section {
   margin: 0 auto;
   position: relative;
   top: 10%;
-  background-color: rgba(56, 59, 65, 0.904);
+  background-color: rgba(11, 12, 16, 0.788);
   overflow: auto; }
 
 #list-head {
@@ -114,26 +114,27 @@ body {
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 0;
-  height: 8vh;
-  padding-bottom: 10px;
-  background-color: #F3F5F4; }
+  align-items: center; }
 
 .main-nav {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
-  list-style-type: none; }
+  align-items: center;
+  list-style-type: none;
+  background-color: #F3F5F4; }
 
 .nav-items {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: black; }
+  color: black;
+  height: 7vh;
+  width: 10vw; }
   .nav-items:hover {
     color: #EC4042;
-    background-color: rgba(140, 146, 185, 0.247); }
+    background-color: #0B0C10; }
 
 .navbar-toggle {
   display: none; }
@@ -154,7 +155,7 @@ body {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: #E0BA9E;
+    color: #0B0C10;
     font-size: 2.5rem;
     z-index: 99; } }
 
@@ -168,8 +169,8 @@ body {
 
 .portfolio-grid {
   display: grid;
-  grid-template-areas: "title title title"  "before current after";
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "leftTitle mainTitle rightTitle"  "leftApp currentApp rightApp";
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 3fr; }
 
 #section-home {
@@ -218,29 +219,63 @@ body {
   padding-left: 5%; }
 
 #section-about-me {
-  background-color: #EC4042; }
+  background-color: #1F2833; }
 
 #section-portfolio {
-  background-color: #E0BA9E; }
+  background-color: #0B0C10; }
+
+#section-contact {
+  background-color: #1F2833; }
 
 #section-blog {
-  background-color: #EC4042; }
+  background-color: #0B0C10; }
 
 #section-portfolio {
-  background-color: #E0BA9E; }
+  background-color: #0B0C10; }
 
-.portfolio-box {
-  grid-area: current;
-  justify-self: center; }
+.portfolio-box-left {
+  grid-area: leftApp;
+  justify-self: end;
+  align-self: center; }
 
-.active-pic {
+.portfolio-box-center {
+  grid-area: currentApp;
+  justify-self: center;
+  border: 1px solid #EC4042; }
+  .portfolio-box-center:hover {
+    border: 4px solid green; }
+
+.portfolio-box-right {
+  grid-area: rightApp;
+  justify-self: start;
+  align-self: center; }
+
+#active-pic {
   width: 100%;
   min-width: 350px;
   max-width: 650px;
   overflow: hidden; }
 
+.preview-pic {
+  width: 100%;
+  min-width: 150px;
+  max-width: 350px;
+  overflow: hidden; }
+
 .active-app-name {
-  grid-area: title;
+  grid-area: mainTitle;
   font-size: 4rem;
   justify-self: center;
   align-self: center; }
+
+.left-active-app-name {
+  grid-area: leftTitle;
+  font-size: 2rem;
+  justify-self: end;
+  align-self: end; }
+
+.right-active-app-name {
+  grid-area: rightTitle;
+  font-size: 2rem;
+  justify-self: start;
+  align-self: end; }
