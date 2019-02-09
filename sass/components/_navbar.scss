@@ -1,35 +1,36 @@
+//ACTIVE PROBLEM: UL doesn't fill entire .navbar element
 
-
-//white bar across entire top screen
+//white bar across entire top screen (nav tag)
     .navbar {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 0;
-        height: 8vh;
-        padding-bottom: 10px;
-        background-color: $color-1;
     }
 
     //targets ul navbar
     .main-nav {
         display: flex;
         flex-grow: 1;
+        // height: 8vh;
         justify-content: space-around;
+        align-items: center;
         list-style-type: none;
+        background-color: $color-1;
     }
     
     //targets <a> tags inside <li>'s
     .nav-items {
         display: flex;
         justify-content: center;
-        // align-self: stretch;
+        align-items: center;
         text-decoration: none;
         color: black;
-        
+        height: 7vh;
+        width: 10vw;
+
         &:hover {
             color: $color-3;
-            background-color: $color-4Opate;
+            background-color: $color-2;
         }
     }
 
